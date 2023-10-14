@@ -308,11 +308,11 @@ console.log("Smallest:", smallest);
 const average = sum / array.length;
 console.log("Average:", average);
 
-// 5. Check how many numbers in the array are multiples of 3
+// 5. llook how many numbers in the array are multiples of 3
 const multiplesOfThree = array.filter(num => num % 3 === 0).length;
 console.log("Numbers that are multiples of 3:", multiplesOfThree);
 
-// 6. Display the array in both its original order and in reverse order
+// 6. show the array in both its original order and in reverse order
 console.log("Original Order:", array);
 console.log("Reverse Order:", [...array].reverse());
 

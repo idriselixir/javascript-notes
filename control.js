@@ -283,36 +283,97 @@
 //   _______________________
 
 // 1. Generate an array of random integers
-const generateRandomArray = (length, min, max) => {
-    const arr = [];
-    for (let i = 0; i < length; i++) {
-        arr.push(Math.floor(Math.random() * (max - min + 1)) + min);
-    }
-    return arr;
-};
+// const generateRandomArray = (length, min, max) => {
+//     const arr = [];
+//     for (let i = 0; i < length; i++) {
+//         arr.push(Math.floor(Math.random() * (max - min + 1)) + min);
+//     }
+//     return arr;
+// };
 
-const array = generateRandomArray(10, 1, 100); // Generates 10 random integers between 1 and 100
-console.log("Generated Array:", array);
+// const array = generateRandomArray(10, 1, 100); // Generates 10 random integers between 1 and 100
+// console.log("Generated Array:", array);
 
 // 2. Find the sum of all numbers in the array
-const sum = array.reduce((acc, val) => acc + val, 0);
-console.log("Sum:", sum);
+// const sum = array.reduce((acc, val) => acc + val, 0);
+
+// let sum = 0;
+// for (let i = 0; i < array.length ; i++) {
+//     sum += array[i];
+// }
+// console.log(sum);
+
 
 // 3. Determine the largest and smallest values in the array
-const largest = Math.max(...array);
-const smallest = Math.min(...array);
-console.log("Largest:", largest);
-console.log("Smallest:", smallest);
+// const largest = Math.max(...array);
+// const smallest = Math.min(...array);
+// console.log("Largest:", largest);
+// console.log("Smallest:", smallest);
 
-// 4. Calculate the average of the numbers in the array
-const average = sum / array.length;
-console.log("Average:", average);
+// // 4. Calculate the average of the numbers in the array
+// const average = sum / array.length;
+// console.log("Average:", average);
 
-// 5. llook how many numbers in the array are multiples of 3
-const multiplesOfThree = array.filter(num => num % 3 === 0).length;
-console.log("Numbers that are multiples of 3:", multiplesOfThree);
+// // 5. llook how many numbers in the array are multiples of 3
+// const multiplesOfThree = array.filter(num => num % 3 === 0).length;
+// console.log("Numbers that are multiples of 3:", multiplesOfThree);
 
-// 6. show the array in both its original order and in reverse order
-console.log("Original Order:", array);
-console.log("Reverse Order:", [...array].reverse());
+// // 6. show the array in both its original order and in reverse order
+// console.log("Original Order:", array);
+// console.log("Reverse Order:", [...array].reverse());
+
+// __________________________________________________________________
+
+
+
+// const array = [34, 12, 67, 78, 21, 6, 90, 56, 99];
+
+// const multiplesOf2 = [];
+
+// for (let i = 0; i < array.length; i++) {
+//   if (array[i] % 2 === 0) {
+//     multiplesOf2.push(array[i]);
+//   }
+// }
+
+// console.log("Multiples of 2:", multiplesOf2);
+// console.log(multiplesOf
+
+
+// );
+// let largest = 0;
+// let smallest = 1000;
+
+// for (let i = 1; i < array.length; i++) {
+//     if (array[i] > largest) {
+//         largest = array[i];
+//     }
+//     if (array[i] < smallest) {
+//         smallest = array[i];
+//     }
+// }
+
+// multiplesOfThree = array.filter(num => num % 3 === 0).length;
+// console.log("Numbers that are multiples of 3:", multiplesOfThree);
+
+
+// console.log("Largest:", largest);
+// console.log("Smallest:", smallest);
+// console.log("Reverse Order:", [...array].reverse());
+
+const array = [34, 12, 67, 78, 21, 6, 90, 56, 99];
+const reversedArray = [];
+
+for (let i = array.length - 1; i >= 0; i--) {
+  reversedArray.push(array[i])
+}
+
+
+
+
+console.log("Reversed Array:", reversedArray);
+
+
+
+
 
